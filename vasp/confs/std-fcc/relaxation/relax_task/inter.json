@@ -1,0 +1,8 @@
+{
+    "type": "vasp",
+    "incar": "vasp_input/INCAR_rlx",
+    "potcar_prefix": "vasp_input",
+    "potcars": {
+        "Al": "POTCAR.al"
+    }
+}

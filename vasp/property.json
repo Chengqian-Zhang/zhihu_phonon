@@ -1,0 +1,17 @@
+{
+    "structures":       ["confs/std-fcc"],
+    "interaction": {
+        "type":          "vasp",
+        "incar":"vasp_input/INCAR",
+        "potcar_prefix" : "vasp_input",
+        "potcars":{"Al": "POTCAR.al"}
+    },
+    "properties": [
+        {
+         "type":         "phonon",
+	 "band_path": "0.5000   0.5000   0.5000  0.0000   0.0000   0.0000 0.5000   0.0000   0.5000 0.5000   0.2500   0.7500",
+	 "supercell_matrix":[3,3,3]
+        }
+        ]
+}
+

@@ -1,0 +1,40 @@
+{
+    "api_version": "1.0",
+    "deepmd_version": "2.0.1",
+    "fp":
+      [{
+        "command": "mpirun -n 16 vasp_std",
+        "machine": {
+          "batch_type": "Lebesgue",
+          "context_type": "LebesgueContext",
+          "local_root" : "./",
+          "remote_profile":{
+            "email": "",
+            "password": "",
+            "program_id": ,
+              "keep_backup":true,
+              "input_data":{
+                "job_type": "indicate",
+                "log_file": "task*/fp.log",
+                "grouped":true,
+                "job_name": "dpgen_fp_job",
+                "disk_size": 100,
+                "checkpoint_files": "sync_files",
+                "checkpoint_time":30,
+                "scass_type":"c16_m32_cpu",
+                "platform": "ali",
+                "image_name":"LBG_VASP_5.4.4_v1",
+                "on_demand":0
+              }
+          }
+        },
+        "resources": {
+          "group_size": 50,
+          "local_root":"./",
+          "source_list": ["/opt/intel/oneapi/setvars.sh"]
+        }
+      }
+    ]
+  }
+
+
